@@ -1,0 +1,12 @@
+.gradle/
+build/
+local.properties
+signing/
+keystore.properties
+*.iml
+.idea/
+.kotlin/
+captures/
+tools/parity/.harness-run.html
+*.mp4
+.DS_Store

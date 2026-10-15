@@ -1,0 +1,15 @@
+Spin Doctor
+Copyright 2026 Lloyd Stellar (https://lloydstellar.nl)
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The name "Spin Doctor" as the name of this app, the app icon, the name
+Lloyd Stellar and the artwork shown in the screenshots and store graphics are
+not licensed under the Apache License. Section 6 of the license does not grant
+permission to use them. Builds published by others must use their own name,
+icon and package name.
+
+This product includes the fonts Orbitron (Copyright 2018 The Orbitron Project
+Authors) and Share Tech Mono (Copyright 2012 Carrois Type Design, Ralph du Carrois), licensed
+under the SIL Open Font License, Version 1.1. The license texts are in
+app/src/main/assets/licenses/.

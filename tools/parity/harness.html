@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Renders tools/parity/scenes.json with the website's own app.js and dumps PNGs as data URLs.
+     Run with tools/parity/render-web.sh -->
+<style>
+@font-face { font-family: Orbitron; src: url(../../app/src/main/assets/fonts/orbitron.ttf); font-weight: 100 900; }
+@font-face { font-family: "Share Tech Mono"; src: url(../../app/src/main/assets/fonts/share_tech_mono.ttf); }
+</style>
+<script src="APPJS"></script>
+</head><body><pre id="out">pending</pre>
+<script>
+const DEFAULTS = JSON.parse(JSON.stringify(appState));
+(async () => {
+  const out = {};
+  try {
+    const scenes = SCENES;
+    const cover = new Image();
+    cover.src = 'data:image/png;base64,COVER';
+    await cover.decode();
+    await document.fonts.load('700 40px Orbitron');
+    await document.fonts.load('400 40px "Share Tech Mono"');
+    for (const sc of scenes) {
+      for (const k of Object.keys(DEFAULTS)) if (typeof DEFAULTS[k] !== 'object' || DEFAULTS[k] === null) appState[k] = DEFAULTS[k];
+      Object.assign(appState, sc.state);
+      appState.coverImage = cover;
+      const c = document.createElement('canvas');
+      c.width = sc.w; c.height = sc.h;
+      const ctx = c.getContext('2d');
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = 'high';
+      renderVinylFrame(ctx, sc.w, sc.h, { rotation: sc.rotation, animated: sc.animated, pulse: sc.pulse });
+      out[sc.name] = c.toDataURL('image/png');
+    }
+  } catch (e) { out.error = String(e && e.stack || e); }
+  document.getElementById('out').textContent = JSON.stringify(out);
+})();
+</script></body></html>

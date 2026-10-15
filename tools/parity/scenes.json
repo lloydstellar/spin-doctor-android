@@ -1,0 +1,12 @@
+[
+  {"name": "black", "w": 1080, "h": 1080, "rotation": 0.9, "animated": true, "pulse": 0,
+   "state": {}},
+  {"name": "splatter", "w": 1080, "h": 1080, "rotation": 2.1, "animated": true, "pulse": 0,
+   "state": {"vinylFinish": "splatter", "vinylColor": "#c81e3c", "vinylColor2": "#f2ede4", "vinylZoom": 100, "backgroundColor": "#0a2850"}},
+  {"name": "marble", "w": 608, "h": 1080, "rotation": 0.3, "animated": true, "pulse": 0,
+   "state": {"vinylFinish": "marble", "vinylColor": "#1e3a8a", "vinylColor2": "#ffb000", "vinylZoom": 85}},
+  {"name": "text", "w": 864, "h": 1080, "rotation": 1.2, "animated": true, "pulse": 0.02,
+   "state": {"textEnabled": true, "artistName": "Lloyd Stellar", "trackTitle": "Spin Doctor", "textStyle": "techno", "textPosition": "below", "badgeEnabled": true, "badgeType": "outnow", "backgroundColor": "#101010"}},
+  {"name": "mono", "w": 1080, "h": 1080, "rotation": 0, "animated": false, "pulse": 0,
+   "state": {"vinylFinish": "solid", "vinylColor": "#4de0ff", "textEnabled": true, "artistName": "Lloyd Stellar", "trackTitle": "Night Drive", "textStyle": "mono", "textPosition": "above", "textColor": "#ffb000", "badgeEnabled": true, "badgeType": "custom", "badgeText": "out friday", "badgeColor": "#ff4ddb", "showCenterHole": false, "vinylZoom": 120}}
+]

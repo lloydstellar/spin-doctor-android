@@ -1,0 +1,24 @@
+<resources>
+    <style name="Theme.SpinDoctor" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/void_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">always</item>
+        <item name="android:colorAccent">@color/amber</item>
+    </style>
+
+    <style name="Theme.SpinDoctor.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/void_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.SpinDoctor</item>
+    </style>
+
+    <!-- the release date picker: the platform dialog in the site's colours -->
+    <style name="Theme.SpinDoctor.Dialog" parent="android:Theme.Material.Dialog.Alert">
+        <item name="android:colorPrimary">@color/panel_raised</item>
+        <item name="android:colorAccent">@color/amber</item>
+        <item name="android:colorBackground">@color/panel</item>
+        <item name="android:textColorPrimary">@color/cyan_bright</item>
+        <item name="android:textColorSecondary">@color/cyan</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <color name="void_bg">#FF01030C</color>
+    <color name="amber">#FFFFB000</color>
+    <color name="cyan">#FF4DE0FF</color>
+    <color name="cyan_bright">#FFCDF4FF</color>
+    <color name="panel">#FF04102A</color>
+    <color name="panel_raised">#FF0A2850</color>
+</resources>
