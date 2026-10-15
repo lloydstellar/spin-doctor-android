@@ -22,7 +22,7 @@ accounts, no ads and no tracking, and it puts no watermark in your videos.
 
 There is no iOS version yet, and I would love one. If you build apps for
 iPhone and want to port Spin Doctor, open an issue or comment on the
-[iOS issue](../../issues?q=label%3Aios). [PORTING.md](PORTING.md) describes
+[iOS issue](https://github.com/lloydstellar/spin-doctor-android/issues/1). [PORTING.md](PORTING.md) describes
 exactly how a frame and its sound are made, with the numbers you need and the
 tools to check that your output matches.
 
